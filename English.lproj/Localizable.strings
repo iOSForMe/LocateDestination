@@ -1,0 +1,37 @@
+/* 
+   Localized.strings
+   LocateDestination
+
+   Created by maesinfo on 12/14/11.
+   Copyright 2011 __MyCompanyName__. All rights reserved.
+ */
+
+"title_dest" = "Destination";
+"title_locate" = "Locate";
+"title_settings" = "Settings";
+"title_help" = "Help";
+
+"string_Alert" = "Alert";
+"string_InvalidInput" = "Please make sure the input is valid!";
+"string_OK" = "OK";
+"string_Save" = "Save";
+"string_Cancel" = "cancel";
+"string_CurrentDest" = "Current Destination";
+"string_Name" = "Name";
+"string_Longitude" ="Longitude";
+"string_Latitude"= "Latitude";
+"string_Altitude"= "Altitude";
+"string_ModifyDest"="Modify Destination";
+
+"string_Edit" = "Edit Destination";
+"string_Reset"="Reset Destination";
+"string_SetFromHistory"="Set From History";
+"string_Modify"="Modify Current Destination";
+"string_SetDest" = "Set Destination";
+"string_SetMannual"="Set Mannually";
+"string_SetFrom"  ="Set From Table";
+"string_Distance" = "To";
+"string_CurrentAltitude"="Current Altitude";
+
+"dest_FourSisterMountain"="Four Sister Mountain";
+"dest_FourSisterMountain_Biggest"="Biggest Peak,Four Sister Mountain";

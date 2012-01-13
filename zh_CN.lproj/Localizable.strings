@@ -1,0 +1,37 @@
+/* 
+   Localized.strings
+   LocateDestination
+
+   Created by maesinfo on 12/14/11.
+   Copyright 2011 __MyCompanyName__. All rights reserved.
+ */
+
+"title_dest" = "目标点";
+"title_settings" = "设 置";
+"title_locate" = "定 位";
+"title_help" = "帮 助";
+
+"string_Alert" = "提示";
+"string_InvalidInput" = "请确保输入有效值！";
+"string_OK" = "好";
+"string_Save" = "保存";
+"string_Cancel" = "取消";
+"string_CurrentDest" = "当前目标点";
+"string_Name" = "名称";
+"string_Longitude" ="经度";
+"string_Latitude"= "纬度";
+"string_Altitude"= "海拔";
+
+"string_Edit" = "编辑目标点";
+"string_Reset"="重设目标点";
+"string_SetFromHistory"="从历史记录选择目标点";
+"string_Modify"="修改当前目标点";
+"string_ModifyDest"="修改目标点";
+"string_SetDest" = "设置目标点";
+"string_SetMannual"="手工设置";
+"string_SetFrom"  ="从列表选择";
+"string_Distance" = "到";
+"string_CurrentAltitude"="当前海拔";
+
+"dest_FourSisterMountain"="四姑娘山";
+"dest_FourSisterMountain_Biggest"="四姑娘山大峰";
