@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "DestHandler.h"
-#import "settingsController.h"
+#import "BaseDestViewController.h"
+//#import "settingsController.h"
 
 @interface SetDestViewController : BaseDestViewController<UIAlertViewDelegate> {
 
 	struct DestInfo dstInfo;
+	UIViewController  *parent;
 }
-@property(nonatomic,assign)   id <SetDestDelegate>   delegate;
+//@property(nonatomic,assign)   id <SetDestDelegate>   delegate;
+
+-(id)initWithParent:(UIViewController*)controller;
 
 -(IBAction) goBack:(id) sender;
 -(IBAction) goSave:(id) sender;

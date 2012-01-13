@@ -12,7 +12,15 @@
 
 
 @implementation SetDestViewController
-@synthesize delegate;
+//@synthesize delegate;
+
+
+-(id)initWithParent:(UIViewController*)controller
+{
+	[super init];
+	parent = controller;
+	return self;
+}
 
 -(void) loadView
 {
@@ -56,7 +64,9 @@
 
 -(IBAction) goBack:(id) sender
 {
-	[delegate setController:self didSetDest:nil];
+	settingsController *controller = (settingsController*)parent;
+	[controller setDestInfo:nil];
+//	[delegate setController:self didSetDest:nil];
 //	[self emptyUI];
 }
 
@@ -65,7 +75,8 @@
 	struct DestInfo *info = [self retrieveDestInfo];
 	if(info)
 	{
-		[delegate setController:self didSetDest:info];
+		settingsController *controller = (settingsController*)parent;
+		[controller setDestInfo:info];
 		[self emptyUI];
 	}
 	else {

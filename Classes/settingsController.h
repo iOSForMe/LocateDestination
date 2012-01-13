@@ -8,21 +8,22 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseDestViewController.h"
+#import "SetDestViewController.h"
 #import "SetFromhistoryViewController.h"
 #import "ModifyViewController.h"
 
 
-@class SetDestViewController;
-
-@protocol SetDestDelegate <NSObject>
-
-- (void)setController:(SetDestViewController *)setController
-		   didSetDest:(struct DestInfo *)info;
-@end
-
+//@class SetDestViewController;
+//
+//@protocol SetDestDelegate <NSObject>
+//
+//- (void)setController:(SetDestViewController *)setController
+//		   didSetDest:(struct DestInfo *)info;
+//@end
+//
 
 @interface settingsController : BaseDestViewController 
-<UIActionSheetDelegate,SetDestDelegate>
+<UIActionSheetDelegate>
 {
 	SetDestViewController *setController;
 	UINavigationController *navSetController;

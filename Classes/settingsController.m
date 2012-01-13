@@ -162,11 +162,11 @@
 	// navigation bar.
 	if(nil == setController)
 	{
-		setController = [[SetDestViewController alloc]init ];
+		setController = [[SetDestViewController alloc]initWithParent:self ];
 	
 		// Configure the RecipeAddViewController. In this case, it reports any
 		// changes to a custom delegate object.
-		[setController setDelegate : self];
+//		[setController setDelegate : self];
 
 		// Create the navigation controller and present it modally.
 		navSetController = [[UINavigationController alloc]
@@ -206,11 +206,11 @@
 	// navigation bar.
 	if(nil == modifyController)
 	{
-		modifyController = [[ModifyViewController alloc]init ];
+		modifyController = [[ModifyViewController alloc]initWithParent:self ];
 		
 		// Configure the RecipeAddViewController. In this case, it reports any
 		// changes to a custom delegate object.
-		[modifyController setDelegate : self];
+		//[modifyController setDelegate : self];
 		
 		// Create the navigation controller and present it modally.
 		navModifyController = [[UINavigationController alloc]
@@ -275,7 +275,7 @@
 	}
 	if(2 == buttonIndex)
 	{
-		[self resetDest:nil];
+		[self modifyDest:nil];
 	}
 }
 
@@ -291,12 +291,12 @@
 	[self dismissModalViewControllerAnimated:YES];
 }
 
-#pragma mark RecipeAddDelegate
-- (void)setController:(SetDestViewController *)setDestController
-		   didSetDest:(struct DestInfo *)info
-{
-	[self setDestInfo:info];
-//	[setController emptyUI];
-}
+//#pragma mark RecipeAddDelegate
+//- (void)setController:(SetDestViewController *)setDestController
+//		   didSetDest:(struct DestInfo *)info
+//{
+//	[self setDestInfo:info];
+////	[setController emptyUI];
+//}
 
 @end
