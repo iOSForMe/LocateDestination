@@ -130,6 +130,8 @@
 	SAFE_RELEASE(navSetController);
 	SAFE_RELEASE(setFromhistoryController);
 	SAFE_RELEASE(navSetFromhistoryController);
+	SAFE_RELEASE(modifyController);
+	SAFE_RELEASE(navModifyController);
 
     [super dealloc];
 }
@@ -197,6 +199,31 @@
 	NSLog(@"end present!");
 }
 
+- (IBAction)modifyDest:(id)sender
+{
+	// Create the root view controller for the navigation controller
+	// The new view controller configures a Cancel and Done button for the
+	// navigation bar.
+	if(nil == modifyController)
+	{
+		modifyController = [[ModifyViewController alloc]init ];
+		
+		// Configure the RecipeAddViewController. In this case, it reports any
+		// changes to a custom delegate object.
+		[modifyController setDelegate : self];
+		
+		// Create the navigation controller and present it modally.
+		navModifyController = [[UINavigationController alloc]
+							initWithRootViewController:modifyController];
+	}
+	
+	[self presentModalViewController:navModifyController animated:YES];
+	
+	// The navigation controller is now owned by the current view controller
+	// and the root view controller is owned by the navigation controller,
+	// so both objects should be released to prevent over-retention.
+}
+
 
 -(void)  setDestInfoUI:(struct DestInfo*)info
 {
@@ -246,12 +273,13 @@
 	{
 		[self setFromHistory:nil];
 	}
+	if(2 == buttonIndex)
+	{
+		[self resetDest:nil];
+	}
 }
 
-
-#pragma mark RecipeAddDelegate
-- (void)setController:(SetDestViewController *)setDestController
-		   didSetDest:(struct DestInfo *)info
+-(void) setDestInfo:(struct DestInfo*)info
 {
 	if (info) {
 		// Add the recipe to the recipes controller.
@@ -261,7 +289,14 @@
 //		[table reloadData];
 	}
 	[self dismissModalViewControllerAnimated:YES];
-	[setController emptyUI];
+}
+
+#pragma mark RecipeAddDelegate
+- (void)setController:(SetDestViewController *)setDestController
+		   didSetDest:(struct DestInfo *)info
+{
+	[self setDestInfo:info];
+//	[setController emptyUI];
 }
 
 @end

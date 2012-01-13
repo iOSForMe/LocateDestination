@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BaseDestViewController.h"
 #import "SetFromhistoryViewController.h"
+#import "ModifyViewController.h"
 
 
 @class SetDestViewController;
@@ -27,6 +28,9 @@
 	UINavigationController *navSetController;
 	SetFromhistoryViewController *setFromhistoryController;
 	UINavigationController *navSetFromhistoryController;
+	ModifyViewController *modifyController;
+	UINavigationController *navModifyController;
+
 	UIActionSheet *promptView;
 	
 	BOOL  bFirstTime; // update table for first time
@@ -34,10 +38,13 @@
 
 -(void) cancelModalView;
 
+-(void) setDestInfo:(struct DestInfo*)info;
 -(void)  setDestInfoUI:(struct DestInfo*)info;
 
 //-(IBAction) goDestination:(id)sender;
 -(IBAction) goEdit:(id)sender;
 - (IBAction)resetDest:(id)sender;
 - (IBAction)setFromHistory:(id)sender;
+- (IBAction)modifyDest:(id)sender;
+
 @end

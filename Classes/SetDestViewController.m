@@ -66,7 +66,7 @@
 	if(info)
 	{
 		[delegate setController:self didSetDest:info];
-//		[self empty];
+		[self emptyUI];
 	}
 	else {
 		UIAlertView *alert = [[UIAlertView alloc]initWithTitle:NSLocalizedString(@"string_Alert",nil) 
@@ -97,14 +97,14 @@
 		textField = [super getCellInput:1];
 		NSScanner *scanner = [[NSScanner alloc ]initWithString:textField.text];
 		double dbVal;
-		if([scanner scanDouble:&dbVal])
+		if([scanner scanDouble:&dbVal] &&(!(dbVal>90.0f) && !(dbVal<-90.0f)))
 		{
 			dstInfo.latitude = dbVal;
 			SAFE_RELEASE(scanner);
 
 			textField = [super getCellInput:2];
 			scanner = [[NSScanner alloc ]initWithString:textField.text];
-			if([scanner scanDouble:&dbVal])
+			if([scanner scanDouble:&dbVal] &&(!(dbVal>180.0f) && !(dbVal<-180.0f)))
 			{
 				dstInfo.longitude = dbVal;
 				SAFE_RELEASE(scanner);

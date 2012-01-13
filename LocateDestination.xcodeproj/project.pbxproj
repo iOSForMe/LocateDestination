@@ -24,6 +24,7 @@
 		BE9DF73414A1CE0600CD846F /* SetDestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DF73314A1CE0600CD846F /* SetDestViewController.m */; };
 		BE9FC2ED14AC105A004DEFE6 /* current.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9FC2EB14AC105A004DEFE6 /* current.png */; };
 		BE9FC2EE14AC105A004DEFE6 /* dest.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9FC2EC14AC105A004DEFE6 /* dest.png */; };
+		BEA617AE14C03E56003AD937 /* ModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA617AD14C03E56003AD937 /* ModifyViewController.m */; };
 		BEA6FB8F14B6A0CD001AB64B /* bg_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA6FB8E14B6A0CD001AB64B /* bg_blue.png */; };
 		BEA6FBD714B6B4F5001AB64B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA6FBD614B6B4F5001AB64B /* BaseViewController.m */; };
 		BEAFFD7114BD753D00D257B2 /* SetFromhistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAFFD7014BD753D00D257B2 /* SetFromhistoryViewController.m */; };
@@ -67,6 +68,8 @@
 		BE9DF73314A1CE0600CD846F /* SetDestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetDestViewController.m; sourceTree = "<group>"; };
 		BE9FC2EB14AC105A004DEFE6 /* current.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = current.png; path = res/current.png; sourceTree = "<group>"; };
 		BE9FC2EC14AC105A004DEFE6 /* dest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dest.png; path = res/dest.png; sourceTree = "<group>"; };
+		BEA617AC14C03E56003AD937 /* ModifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyViewController.h; sourceTree = "<group>"; };
+		BEA617AD14C03E56003AD937 /* ModifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyViewController.m; sourceTree = "<group>"; };
 		BEA6FB8E14B6A0CD001AB64B /* bg_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_blue.png; path = res/bg_blue.png; sourceTree = "<group>"; };
 		BEA6FBD514B6B4F5001AB64B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		BEA6FBD614B6B4F5001AB64B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -215,6 +218,8 @@
 				BE9DF73314A1CE0600CD846F /* SetDestViewController.m */,
 				BEAFFD6F14BD753D00D257B2 /* SetFromhistoryViewController.h */,
 				BEAFFD7014BD753D00D257B2 /* SetFromhistoryViewController.m */,
+				BEA617AC14C03E56003AD937 /* ModifyViewController.h */,
+				BEA617AD14C03E56003AD937 /* ModifyViewController.m */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 				BED52F3A14AD976A006D3C65 /* HelpViewController.m in Sources */,
 				BEA6FBD714B6B4F5001AB64B /* BaseViewController.m in Sources */,
 				BEAFFD7114BD753D00D257B2 /* SetFromhistoryViewController.m in Sources */,
+				BEA617AE14C03E56003AD937 /* ModifyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

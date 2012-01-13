@@ -102,13 +102,22 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	if(indexPath.section == 1)
-	{
-		//		SettingsForTabController *controller = [[SettingsForTabController alloc] init];
-		//		LocateDestinationAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-		//		[delegate.nav pushViewController:controller animated:YES];
-	}
-	
+//	if(indexPath.section == 1)
+//	{
+//		//		SettingsForTabController *controller = [[SettingsForTabController alloc] init];
+//		//		[delegate.nav pushViewController:controller animated:YES];
+//	}
+
+	LocateDestinationAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	DestInfoObj *obj = [[delegate.dstHandler getHistory]objectAtIndex:indexPath.row];
+	settingsController *controller = (settingsController*)parent;
+
+	NSMutableArray *arr =(NSMutableArray*)[delegate.dstHandler getHistory];
+	[obj retain];
+	[arr removeObjectAtIndex:indexPath.row];
+	[controller setDestInfo:[obj getInfo]];
+	[obj release];
+
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
