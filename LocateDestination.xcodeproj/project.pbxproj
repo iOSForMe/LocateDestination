@@ -20,6 +20,8 @@
 		BE4C84701498ADA200726E48 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4C846E1498ADA200726E48 /* settings.png */; };
 		BE4C848C1498B03900726E48 /* locate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4C848A1498B03900726E48 /* locate@2x.png */; };
 		BE4C848D1498B03900726E48 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4C848B1498B03900726E48 /* settings@2x.png */; };
+		BE8FD1D214C12FD500423949 /* current@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE8FD1D014C12FD500423949 /* current@2x.png */; };
+		BE8FD1D314C12FD500423949 /* dest@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE8FD1D114C12FD500423949 /* dest@2x.png */; };
 		BE984BBA14A96EFD00C0E610 /* LocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE984BB914A96EFD00C0E610 /* LocationView.m */; };
 		BE9DF73414A1CE0600CD846F /* SetDestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9DF73314A1CE0600CD846F /* SetDestViewController.m */; };
 		BE9FC2ED14AC105A004DEFE6 /* current.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9FC2EB14AC105A004DEFE6 /* current.png */; };
@@ -62,6 +64,8 @@
 		BE4C846E1498ADA200726E48 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = res/settings.png; sourceTree = "<group>"; };
 		BE4C848A1498B03900726E48 /* locate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "locate@2x.png"; path = "res/locate@2x.png"; sourceTree = "<group>"; };
 		BE4C848B1498B03900726E48 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings@2x.png"; path = "res/settings@2x.png"; sourceTree = "<group>"; };
+		BE8FD1D014C12FD500423949 /* current@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "current@2x.png"; path = "res/current@2x.png"; sourceTree = "<group>"; };
+		BE8FD1D114C12FD500423949 /* dest@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dest@2x.png"; path = "res/dest@2x.png"; sourceTree = "<group>"; };
 		BE984BB814A96EFD00C0E610 /* LocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationView.h; sourceTree = "<group>"; };
 		BE984BB914A96EFD00C0E610 /* LocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationView.m; sourceTree = "<group>"; };
 		BE9DF73214A1CE0600CD846F /* SetDestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetDestViewController.h; sourceTree = "<group>"; };
@@ -167,7 +171,9 @@
 			children = (
 				BEA6FB8E14B6A0CD001AB64B /* bg_blue.png */,
 				BE9FC2EB14AC105A004DEFE6 /* current.png */,
+				BE8FD1D014C12FD500423949 /* current@2x.png */,
 				BE9FC2EC14AC105A004DEFE6 /* dest.png */,
+				BE8FD1D114C12FD500423949 /* dest@2x.png */,
 				BED52F3D14AD9E5D006D3C65 /* help.png */,
 				BED52F3E14AD9E5D006D3C65 /* help@2x.png */,
 				BE4C846D1498ADA200726E48 /* locate.png */,
@@ -311,6 +317,8 @@
 				BED52F3F14AD9E5D006D3C65 /* help.png in Resources */,
 				BED52F4014AD9E5D006D3C65 /* help@2x.png in Resources */,
 				BEA6FB8F14B6A0CD001AB64B /* bg_blue.png in Resources */,
+				BE8FD1D214C12FD500423949 /* current@2x.png in Resources */,
+				BE8FD1D314C12FD500423949 /* dest@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
